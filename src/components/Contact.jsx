@@ -13,6 +13,13 @@ const FacebookIcon = () => (
     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
   </svg>
 )
+const InstagramIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+  </svg>
+)
 import { WA } from '../utils/whatsapp'
 
 const details = [
@@ -112,6 +119,14 @@ export default function Contact() {
               onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.65)'; }}
             >
               <FacebookIcon /> Facebook
+            </a>
+            <a href="https://www.instagram.com/wavonexltd?utm_source=qr&igsh=OTZpcWdwcWptb3Y3" target="_blank" rel="noopener noreferrer"
+              title="Wavonex on Instagram"
+              style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 10, padding: '11px 20px', color: 'rgba(255,255,255,0.65)', fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 14, textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s, color 0.2s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#E1306C'; e.currentTarget.style.borderColor = '#E1306C'; e.currentTarget.style.color = '#fff'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.65)'; }}
+            >
+              <InstagramIcon /> Instagram
             </a>
           </div>
         </div>
