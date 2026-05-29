@@ -6,7 +6,7 @@ const services = [
   {
     id: 'hvac',
     name: 'HVAC Systems',
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80',
+    image: 'https://media.gettyimages.com/id/1473146054/photo/aircon-maintenance-engineers.jpg?s=612x612&w=0&k=20&c=DFNTrfNgk0jm0Gt0d_Gf8CsTrd24Zw4XfwFeK1mk7mg=',
     description: 'From split units to full central plant systems — we design, supply, install, and maintain HVAC infrastructure that delivers consistent climate control. Residential, commercial, and industrial.',
     subServices: ['Air Conditioning', 'Ventilation', 'Ducting', 'BMS Integration', 'Energy Audits', 'PPM Contracts'],
     icon: <Wind size={26} color="#F5C518" strokeWidth={1.8} />,
@@ -15,7 +15,7 @@ const services = [
   {
     id: 'refrigeration',
     name: 'Refrigeration Solutions',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: 'https://media.istockphoto.com/id/1414224771/photo/female-engineer-inspects-and-controls-the-cooling-system-of-a-large-factory-air-conditioner.jpg?s=612x612&w=0&k=20&c=MQbsI97oO0ijtxsjC3mFiOfvoO_55BNv-iK-piTVC6A=',
     description: 'Cold rooms, blast freezers, display refrigeration, and industrial chillers — built to exact temperature specifications. Our cold chain solutions keep your product safe and your business compliant.',
     subServices: ['Cold Room Construction', 'Commercial Refrigeration', 'Industrial Cooling', 'Temperature Monitoring', 'System Upgrades'],
     icon: <Thermometer size={26} color="#F5C518" strokeWidth={1.8} />,
@@ -24,7 +24,7 @@ const services = [
   {
     id: 'solar',
     name: 'Solar Energy',
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80',
+    image: 'https://media.istockphoto.com/id/1546822778/photo/amount-of-energy-storage-systems-or-battery-container-units-with-solar-and-turbine-farm.jpg?s=612x612&w=0&k=20&c=hl27dCbAF5kTXBa7DWTZsY6PJE1IDzyZH2V2l1WvbmQ=',
     description: "Kenya's sun is your greatest untapped asset. We design and install grid-tied, off-grid, and hybrid solar PV systems that cut your energy costs and future-proof your operations.",
     subServices: ['Solar PV Installation', 'Battery Storage', 'Solar Water Heating', 'Commercial Solar', 'Solar Maintenance'],
     icon: <Sun size={26} color="#F5C518" strokeWidth={1.8} />,

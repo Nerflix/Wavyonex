@@ -1,5 +1,18 @@
 import { useEffect, useRef } from 'react'
 import { MessageCircle, Phone, Mail, Globe, MapPin } from 'lucide-react'
+
+const LinkedInIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect x="2" y="9" width="4" height="12"/>
+    <circle cx="4" cy="4" r="2"/>
+  </svg>
+)
+const FacebookIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </svg>
+)
 import { WA } from '../utils/whatsapp'
 
 const details = [
@@ -78,6 +91,29 @@ export default function Contact() {
               }
             </div>
           ))}
+        </div>
+
+        {/* Social links */}
+        <div style={{ marginTop: 36, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
+          <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 3, textTransform: 'uppercase' }}>Follow Us</div>
+          <div style={{ display: 'flex', gap: 12 }}>
+            <a href="https://www.linkedin.com/company/wavonex-ltd/" target="_blank" rel="noopener noreferrer"
+              title="Wavonex on LinkedIn"
+              style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 10, padding: '11px 20px', color: 'rgba(255,255,255,0.65)', fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 14, textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s, color 0.2s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#0A66C2'; e.currentTarget.style.borderColor = '#0A66C2'; e.currentTarget.style.color = '#fff'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.65)'; }}
+            >
+              <LinkedInIcon /> LinkedIn
+            </a>
+            <a href="https://web.facebook.com/photo/?fbid=122104984737316460" target="_blank" rel="noopener noreferrer"
+              title="Wavonex on Facebook"
+              style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 10, padding: '11px 20px', color: 'rgba(255,255,255,0.65)', fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 14, textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s, color 0.2s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#1877F2'; e.currentTarget.style.borderColor = '#1877F2'; e.currentTarget.style.color = '#fff'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.65)'; }}
+            >
+              <FacebookIcon /> Facebook
+            </a>
+          </div>
         </div>
       </div>
     </section>

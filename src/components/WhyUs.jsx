@@ -69,18 +69,18 @@ function ValueCard({ prop, delay }) {
   }, [delay])
 
   return (
-    <div ref={ref} className="fade-in" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 10, padding: 'clamp(16px,2vw,24px)', transition: 'background 0.3s, border-color 0.3s' }}
-    onMouseEnter={e => { e.currentTarget.style.background = 'rgba(245,197,24,0.08)'; e.currentTarget.style.borderColor = 'rgba(245,197,24,0.3)'; }}
-    onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.04)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; }}
+    <div ref={ref} className="fade-in" style={{ background: '#fff', border: '1px solid rgba(13,27,62,0.1)', borderRadius: 10, padding: 'clamp(16px,2vw,24px)', transition: 'background 0.3s, border-color 0.3s, box-shadow 0.3s', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}
+    onMouseEnter={e => { e.currentTarget.style.background = 'rgba(13,27,62,0.04)'; e.currentTarget.style.borderColor = 'rgba(13,27,62,0.2)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(13,27,62,0.1)'; }}
+    onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = 'rgba(13,27,62,0.1)'; e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)'; }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-        <span style={{ fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 11, color: '#F5C518', opacity: 0.5 }}>{prop.num}</span>
-        <div style={{ background: 'rgba(245,197,24,0.12)', borderRadius: 8, padding: 8, display: 'flex' }}>
-          <Icon size={16} color="#F5C518" strokeWidth={1.8} />
+        <span style={{ fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 11, color: '#0D1B3E', opacity: 0.35 }}>{prop.num}</span>
+        <div style={{ background: 'rgba(13,27,62,0.08)', borderRadius: 8, padding: 8, display: 'flex' }}>
+          <Icon size={16} color="#0D1B3E" strokeWidth={1.8} />
         </div>
       </div>
-      <h4 style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 'clamp(15px,1.8vw,18px)', color: '#fff', marginBottom: 6 }}>{prop.title}</h4>
-      <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', lineHeight: 1.5 }}>{prop.desc}</p>
+      <h4 style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 'clamp(15px,1.8vw,18px)', color: '#0D1B3E', marginBottom: 6 }}>{prop.title}</h4>
+      <p style={{ fontSize: 13, color: '#666', lineHeight: 1.5 }}>{prop.desc}</p>
     </div>
   )
 }
@@ -100,12 +100,12 @@ export default function WhyUs() {
   }, [])
 
   return (
-    <section id="why" className="section-pad" style={{ background: '#0D1B3E' }}>
+    <section id="why" className="section-pad" style={{ background: '#FFFFFF' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
         <div ref={titleRef} className="fade-in" style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span className="section-label">Why Wavonex</span>
-          <h2 style={{ fontFamily: 'Barlow Condensed', fontWeight: 900, fontSize: 'clamp(32px,5vw,56px)', color: '#fff', textTransform: 'uppercase', lineHeight: 1 }}>
+          <div style={{ display: 'inline-block', background: '#0D1B3E', color: '#F5C518', fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', fontWeight: 700, padding: '4px 16px', borderRadius: 20, marginBottom: 16 }}>Why Wavonex</div>
+          <h2 style={{ fontFamily: 'Barlow Condensed', fontWeight: 900, fontSize: 'clamp(32px,5vw,56px)', color: '#0D1B3E', textTransform: 'uppercase', lineHeight: 1 }}>
             The Standard Others<br /><span style={{ color: '#F5C518' }}>Are Measured Against</span>
           </h2>
         </div>
@@ -126,8 +126,8 @@ export default function WhyUs() {
         </div>
 
         {/* Pull quote */}
-        <div ref={quoteRef} className="fade-in" style={{ background: 'rgba(245,197,24,0.05)', border: '1px solid rgba(245,197,24,0.25)', borderLeft: '4px solid #F5C518', borderRadius: 12, padding: 'clamp(28px,4vw,48px) clamp(20px,4vw,56px)', textAlign: 'center', marginBottom: 48 }}>
-          <blockquote style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 'clamp(18px,3vw,32px)', color: '#F5C518', lineHeight: 1.5, fontStyle: 'italic', maxWidth: 800, margin: '0 auto' }}>
+        <div ref={quoteRef} className="fade-in" style={{ background: 'rgba(13,27,62,0.03)', border: '1px solid rgba(13,27,62,0.1)', borderLeft: '4px solid #F5C518', borderRadius: 12, padding: 'clamp(28px,4vw,48px) clamp(20px,4vw,56px)', textAlign: 'center', marginBottom: 48 }}>
+          <blockquote style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 'clamp(18px,3vw,32px)', color: '#0D1B3E', lineHeight: 1.5, fontStyle: 'italic', maxWidth: 800, margin: '0 auto' }}>
             "When your systems fail, production stops. When your HVAC underperforms, people suffer. Wavonex exists to make sure none of that happens."
           </blockquote>
         </div>
@@ -136,7 +136,7 @@ export default function WhyUs() {
           <a href={WA.quote} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#F5C518', color: '#0D1B3E', padding: 'clamp(12px,2vw,16px) clamp(20px,3vw,36px)', borderRadius: 8, fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 'clamp(16px,2vw,20px)', textDecoration: 'none' }}>
             <MessageCircle size={20} /> Get a Free Quote Today
           </a>
-          <a href="tel:0790155393" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', padding: 'clamp(12px,2vw,16px) clamp(20px,3vw,36px)', borderRadius: 8, border: '2px solid rgba(255,255,255,0.3)', fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 'clamp(16px,2vw,20px)', textDecoration: 'none' }}>
+          <a href="tel:0790155393" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#0D1B3E', padding: 'clamp(12px,2vw,16px) clamp(20px,3vw,36px)', borderRadius: 8, border: '2px solid rgba(13,27,62,0.3)', fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 'clamp(16px,2vw,20px)', textDecoration: 'none' }}>
             <Phone size={20} /> Call 0790 155 393
           </a>
         </div>
