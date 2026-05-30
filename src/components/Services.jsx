@@ -6,7 +6,7 @@ const services = [
   {
     id: 'hvac',
     name: 'HVAC Systems',
-    image: 'https://media.gettyimages.com/id/1473146054/photo/aircon-maintenance-engineers.jpg?s=612x612&w=0&k=20&c=DFNTrfNgk0jm0Gt0d_Gf8CsTrd24Zw4XfwFeK1mk7mg=',
+    image: 'https://media.istockphoto.com/id/2202510491/photo/engineers-are-checking-the-hot-coil-system-of-the-rooftop-air-conditioner-for-green-energy.jpg?s=612x612&w=0&k=20&c=BybDlj5GrzDk4S9LgW5oddpsSbbfIoBgFTCMqgZJ9E8=',
     description: 'From split units to full central plant systems — we design, supply, install, and maintain HVAC infrastructure that delivers consistent climate control. Residential, commercial, and industrial.',
     subServices: ['Air Conditioning', 'Ventilation', 'Ducting', 'BMS Integration', 'Energy Audits', 'PPM Contracts'],
     icon: <Wind size={26} color="#F5C518" strokeWidth={1.8} />,
@@ -15,7 +15,7 @@ const services = [
   {
     id: 'refrigeration',
     name: 'Refrigeration Solutions',
-    image: 'https://media.istockphoto.com/id/1414224771/photo/female-engineer-inspects-and-controls-the-cooling-system-of-a-large-factory-air-conditioner.jpg?s=612x612&w=0&k=20&c=MQbsI97oO0ijtxsjC3mFiOfvoO_55BNv-iK-piTVC6A=',
+    image: 'https://t4.ftcdn.net/jpg/03/30/86/05/240_F_330860566_NwetZ4EOspGszt93MtvCi5zB61gJFnqT.jpg',
     description: 'Cold rooms, blast freezers, display refrigeration, and industrial chillers — built to exact temperature specifications. Our cold chain solutions keep your product safe and your business compliant.',
     subServices: ['Cold Room Construction', 'Commercial Refrigeration', 'Industrial Cooling', 'Temperature Monitoring', 'System Upgrades'],
     icon: <Thermometer size={26} color="#F5C518" strokeWidth={1.8} />,

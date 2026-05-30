@@ -124,33 +124,38 @@ export default function Hero() {
           </div>
 
           {/* ── RIGHT: Service panel (desktop only) ── */}
-          <div className="hero-card" style={{ background: 'rgba(255,255,255,0.06)', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 16, padding: '32px 28px', gap: 4 }}>
-            <div style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 11, color: '#F5C518', letterSpacing: 3, textTransform: 'uppercase', marginBottom: 16 }}>What We Do</div>
+          <div className="hero-card" style={{ background: '#ffffff', borderRadius: 16, padding: '0 0 24px', gap: 4, boxShadow: '0 24px 64px rgba(0,0,0,0.5)', overflow: 'hidden', border: 'none' }}>
+            {/* Yellow top bar */}
+            <div style={{ background: '#F5C518', padding: '14px 28px', marginBottom: 20 }}>
+              <div style={{ fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 11, color: '#0D1B3E', letterSpacing: 3, textTransform: 'uppercase' }}>What We Do</div>
+            </div>
 
+            <div style={{ padding: '0 20px', display: 'flex', flexDirection: 'column', gap: 8 }}>
             {services.map((s, i) => (
-              <a key={s.label} href="#services" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 16px', borderRadius: 10, background: i === 0 ? 'rgba(245,197,24,0.12)' : 'rgba(255,255,255,0.04)', border: i === 0 ? '1px solid rgba(245,197,24,0.35)' : '1px solid rgba(255,255,255,0.07)', marginBottom: 8, textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(245,197,24,0.18)'; e.currentTarget.style.borderColor = 'rgba(245,197,24,0.5)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = i === 0 ? 'rgba(245,197,24,0.12)' : 'rgba(255,255,255,0.04)'; e.currentTarget.style.borderColor = i === 0 ? 'rgba(245,197,24,0.35)' : 'rgba(255,255,255,0.07)'; }}
+              <a key={s.label} href="#services" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 18px', borderRadius: 10, background: '#FFF8DC', border: '1.5px solid #F5C518', textDecoration: 'none', transition: 'background 0.2s, transform 0.15s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#FFF3B0'; e.currentTarget.style.transform = 'translateX(3px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = '#FFF8DC'; e.currentTarget.style.transform = 'translateX(0)'; }}
               >
                 <div>
-                  <div style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 17, color: '#fff', marginBottom: 3 }}>{s.label}</div>
-                  <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)' }}>{s.sub}</div>
+                  <div style={{ fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: 17, color: '#0D1B3E', marginBottom: 2 }}>{s.label}</div>
+                  <div style={{ fontSize: 11, color: 'rgba(13,27,62,0.5)' }}>{s.sub}</div>
                 </div>
-                <ArrowRight size={15} color="#F5C518" />
+                <ArrowRight size={15} color="#0D1B3E" />
               </a>
             ))}
+            </div>
 
-            <div style={{ marginTop: 12, padding: '18px 16px', background: 'rgba(37,211,102,0.1)', borderRadius: 10, border: '1px solid rgba(37,211,102,0.25)' }}>
+            <div style={{ margin: '16px 20px 0', padding: '18px', background: '#0D1B3E', borderRadius: 10 }}>
               <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: 1.6, marginBottom: 14 }}>
-                <strong style={{ color: '#fff' }}>Not sure where to start?</strong><br />
+                <strong style={{ color: '#F5C518' }}>Not sure where to start?</strong><br />
                 Free consultation — our engineers respond within 2 hours.
               </div>
               <a href={WA.engineer} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, background: '#25D366', color: '#fff', padding: '11px 16px', borderRadius: 8, fontFamily: 'Barlow Condensed', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
                 <MessageCircle size={16} /> Speak to an Engineer
               </a>
             </div>
-            <div style={{ marginTop: 12, textAlign: 'center' }}>
-              <a href="tel:0790155393" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: 'rgba(255,255,255,0.45)', fontSize: 12, textDecoration: 'none' }}>
+            <div style={{ marginTop: 14, textAlign: 'center' }}>
+              <a href="tel:0790155393" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: 'rgba(13,27,62,0.4)', fontSize: 12, textDecoration: 'none' }}>
                 <Phone size={12} /> 0790 155 393 · Available 24/7
               </a>
             </div>
