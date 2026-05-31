@@ -111,7 +111,7 @@ export default function Hero() {
             {/* Stats strip */}
             <div className="hero-stats" style={{ borderTop: '1px solid rgba(255,255,255,0.12)', paddingTop: 28, gap: 0 }}>
               {[
-                { num: '10+', label: 'Years Experience' },
+                { num: '100+', label: 'Installations' },
                 { num: '500+', label: 'Projects Done' },
                 { num: '24/7', label: 'Emergency Support' },
               ].map((s, i) => (
